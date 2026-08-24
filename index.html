@@ -2,10 +2,14 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
 
 <title>PUMA Apparel Store</title>
+
 
 <style>
 
@@ -19,12 +23,24 @@
     box-sizing:border-box;
 }
 
+html{
+    width:100%;
+    overflow-x:hidden;
+}
+
 body{
     min-height:100vh;
-    font-family:Arial,Helvetica,sans-serif;
+    width:100%;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
     background:#e9e9eb;
 
     display:flex;
+
     justify-content:center;
     align-items:center;
 
@@ -39,11 +55,15 @@ body{
 ========================================================= */
 
 .store{
+
     width:min(1450px,96vw);
+
     min-height:820px;
 
     display:grid;
-    grid-template-columns:57% 43%;
+
+    grid-template-columns:
+        57% 43%;
 
     background:white;
 
@@ -63,6 +83,7 @@ body{
 ========================================================= */
 
 .hero{
+
     position:relative;
 
     min-height:820px;
@@ -95,6 +116,7 @@ body{
 ========================================================= */
 
 .hero::before{
+
     content:"";
 
     position:absolute;
@@ -104,13 +126,15 @@ body{
 
     border-radius:50%;
 
-    background:rgba(255,255,255,.10);
+    background:
+        rgba(255,255,255,.10);
 
     top:-150px;
     right:-130px;
 }
 
 .hero::after{
+
     content:"";
 
     position:absolute;
@@ -120,7 +144,8 @@ body{
 
     border-radius:50%;
 
-    background:rgba(130,80,255,.15);
+    background:
+        rgba(130,80,255,.15);
 
     bottom:-180px;
     left:-100px;
@@ -128,70 +153,78 @@ body{
 
 
 /* =========================================================
-   PUMA LOGO
+   PUMA LOGO + DESCRIPTION
 ========================================================= */
-.brand-row {
 
-    display: flex;
+.brand-row{
 
-    align-items: flex-start;
+    display:flex;
 
-    gap: 28px;
+    align-items:flex-start;
 
-    margin-bottom: 45px;
+    gap:28px;
 
-    padding-top: 20px;
-    margin-left: 20px;
+    margin-bottom:45px;
+
+    padding-top:20px;
+
+    margin-left:20px;
+
+    position:relative;
+
+    z-index:30;
 }
 
-.puma-logo {
+.puma-logo{
 
-    color: #fff;
+    color:#fff;
 
-    font-size: 24px;
+    font-size:24px;
 
-    font-weight: 900;
+    font-weight:900;
 
-    line-height: 1;
+    line-height:1;
 
-    white-space: nowrap;
-
+    white-space:nowrap;
 }
 
-.puma-logo sup {
+.puma-logo sup{
 
-    font-size: 9px;
+    font-size:9px;
 
-    vertical-align: top;
+    vertical-align:top;
 
-    margin-left: 2px;
-
+    margin-left:2px;
 }
 
-.brand-description {
+.brand-description{
 
-    color: #fff;
+    color:#fff;
 
-    font-size: 14px;
+    font-size:14px;
 
-    line-height: 1.35;
+    line-height:1.35;
 
-    font-weight: 500;
+    font-weight:500;
 
-    max-width: 145px;
+    max-width:145px;
 
-    padding-top: 0;
+    padding-top:0;
 
+    display:block;
 }
+
 
 /* =========================================================
    HERO CONTENT
 ========================================================= */
 
 .hero-content{
+
     position:absolute;
 
     left:52px;
+
     top:145px;
 
     width:290px;
@@ -200,6 +233,7 @@ body{
 }
 
 .collection{
+
     font-size:16px;
 
     font-weight:700;
@@ -217,7 +251,9 @@ body{
 ========================================================= */
 
 .hero-title{
-    font-size:clamp(50px,5vw,80px);
+
+    font-size:
+        clamp(50px,5vw,80px);
 
     line-height:.84;
 
@@ -238,11 +274,11 @@ body{
 
 
 /* =========================================================
-   WHITE T-SHIRT
-   MINT / LIGHT GREEN BACKGROUND
+   WHITE COLLECTION
 ========================================================= */
 
 .hero.white{
+
     background:
         radial-gradient(
             circle at 82% 8%,
@@ -271,12 +307,21 @@ body{
     color:#374151;
 }
 
+.hero.white .brand-description{
+    color:#374151;
+}
+
+.hero.white .puma-logo{
+    color:#374151;
+}
+
 
 /* =========================================================
    DESCRIPTION
 ========================================================= */
 
 .description{
+
     font-size:19px;
 
     line-height:1.45;
@@ -290,56 +335,25 @@ body{
 
 
 /* =========================================================
-   SMALL HERO BUTTON
-========================================================= */
-
-.hero-pill{
-    display:flex;
-
-    align-items:center;
-
-    gap:12px;
-
-    width:fit-content;
-
-    padding:11px 22px;
-
-    border-radius:40px;
-
-    border:
-        1px solid rgba(255,255,255,.65);
-
-    background:
-        rgba(255,255,255,.10);
-
-    backdrop-filter:blur(12px);
-
-    font-size:14px;
-
-    white-space:nowrap;
-}
-
-.hero-pill-icon{
-    font-size:20px;
-}
-
-
-/* =========================================================
    PRODUCT IMAGE
 ========================================================= */
 
 .product-image-wrapper{
+
     position:absolute;
 
     right:15px;
+
     top:122px;
 
     width:59%;
+
     height:560px;
 
     display:flex;
 
     align-items:center;
+
     justify-content:center;
 
     z-index:5;
@@ -348,7 +362,9 @@ body{
 }
 
 .product-image{
+
     width:100%;
+
     height:100%;
 
     object-fit:contain;
@@ -385,6 +401,7 @@ body{
 ========================================================= */
 
 .blob{
+
     position:absolute;
 
     border-radius:50%;
@@ -398,6 +415,7 @@ body{
 }
 
 .blob-one{
+
     width:72px;
     height:72px;
 
@@ -413,10 +431,12 @@ body{
         );
 
     box-shadow:
-        0 15px 35px rgba(255,100,180,.35);
+        0 15px 35px
+        rgba(255,100,180,.35);
 }
 
 .blob-two{
+
     width:90px;
     height:55px;
 
@@ -439,6 +459,7 @@ body{
 }
 
 .blob-three{
+
     width:85px;
     height:70px;
 
@@ -461,68 +482,110 @@ body{
 @keyframes blobFloat{
 
     0%,100%{
-        transform:translateY(0) rotate(0deg);
+        transform:
+            translateY(0)
+            rotate(0deg);
     }
 
     50%{
-        transform:translateY(-18px) rotate(8deg);
+        transform:
+            translateY(-18px)
+            rotate(8deg);
     }
 }
 
 
 /* =========================================================
-   NEW BOY IMAGE ANIMATION
-   Uses the supplied 3D PUMA boy image.
-   The old CSS-drawn cartoon is completely removed.
+   CHARACTER ANIMATION
 ========================================================= */
 
 .boy-animation{
+
     position:absolute;
+
     left:-220px;
+
     bottom:48px;
-    width: 160px;
+
+    width:160px;
+
     height:auto;
+
     max-height:430px;
+
     object-fit:contain;
+
     object-position:center bottom;
 
     z-index:10;
+
     pointer-events:none;
 
-    animation:boyImageEntrance 10s ease-in-out infinite;
+    animation:
+        boyImageEntrance
+        10s
+        ease-in-out
+        infinite;
 }
 
 @keyframes boyImageEntrance{
-    0%, 6%{
+
+    0%,6%{
+
         left:-220px;
+
         opacity:0;
-        transform:translateY(10px) scale(.96);
+
+        transform:
+            translateY(10px)
+            scale(.96);
     }
 
     14%{
-        left:-25px;
+
+        left:20px;
+
         opacity:1;
-        transform:translateY(0) scale(1);
+
+        transform:
+            translateY(0)
+            scale(1);
     }
 
     52%{
-        left:-25px;
+
+        left:20px;
+
         opacity:1;
-        transform:translateY(-4px) scale(1);
+
+        transform:
+            translateY(-4px)
+            scale(1);
     }
 
     62%{
-        left:-25px;
+
+        left:20px;
+
         opacity:1;
-        transform:translateY(0) scale(1);
+
+        transform:
+            translateY(0)
+            scale(1);
     }
 
-    76%, 100%{
+    76%,100%{
+
         left:-220px;
+
         opacity:0;
-        transform:translateY(10px) scale(.96);
+
+        transform:
+            translateY(10px)
+            scale(.96);
     }
 }
+
 
 /* =========================================================
    CATEGORY BAR
@@ -571,6 +634,7 @@ body{
     flex-direction:column;
 
     justify-content:center;
+
     align-items:center;
 
     gap:7px;
@@ -603,10 +667,12 @@ body{
     color:#ed2e8a;
 
     box-shadow:
-        0 8px 25px rgba(0,0,0,.12);
+        0 8px 25px
+        rgba(0,0,0,.12);
 }
 
 .category-icon{
+
     font-size:26px;
 }
 
@@ -630,7 +696,9 @@ body{
 }
 
 
-/* heading */
+/* =========================================================
+   STORE HEADING
+========================================================= */
 
 .store-heading h1{
 
@@ -674,10 +742,12 @@ body{
     display:flex;
 
     justify-content:center;
+
     align-items:center;
 
     box-shadow:
-        0 10px 30px rgba(0,0,0,.08);
+        0 10px 30px
+        rgba(0,0,0,.08);
 
     font-size:25px;
 }
@@ -745,7 +815,8 @@ body{
     padding:12px;
 
     box-shadow:
-        0 5px 15px rgba(0,0,0,.025);
+        0 5px 15px
+        rgba(0,0,0,.025);
 
     transition:
         transform .25s ease,
@@ -758,11 +829,14 @@ body{
         translateY(-3px);
 
     box-shadow:
-        0 12px 25px rgba(0,0,0,.08);
+        0 12px 25px
+        rgba(0,0,0,.08);
 }
 
 
-/* product info */
+/* =========================================================
+   PRODUCT INFO
+========================================================= */
 
 .product-info{
 
@@ -771,11 +845,14 @@ body{
     align-items:center;
 
     gap:18px;
+
+    min-width:0;
 }
 
 .thumb{
 
     width:88px;
+
     height:95px;
 
     object-fit:cover;
@@ -783,6 +860,8 @@ body{
     border-radius:16px;
 
     background:#f1f1f1;
+
+    flex-shrink:0;
 }
 
 .product-name{
@@ -806,7 +885,9 @@ body{
 }
 
 
-/* size */
+/* =========================================================
+   SIZE
+========================================================= */
 
 .size{
 
@@ -822,13 +903,16 @@ body{
     display:flex;
 
     justify-content:center;
+
     align-items:center;
 
     font-weight:700;
 }
 
 
-/* price */
+/* =========================================================
+   PRICE
+========================================================= */
 
 .price{
 
@@ -840,7 +924,9 @@ body{
 }
 
 
-/* plus */
+/* =========================================================
+   ADD BUTTON
+========================================================= */
 
 .add{
 
@@ -862,6 +948,7 @@ body{
     display:flex;
 
     align-items:center;
+
     justify-content:center;
 
     transition:.25s;
@@ -904,7 +991,10 @@ body{
         10px 12px 10px 30px;
 
     box-shadow:
-        0 8px 25px rgba(0,0,0,.05);
+        0 8px 25px
+        rgba(0,0,0,.05);
+
+    gap:10px;
 }
 
 .counter{
@@ -914,6 +1004,8 @@ body{
     font-weight:700;
 
     color:#252525;
+
+    white-space:nowrap;
 }
 
 .dots{
@@ -991,6 +1083,7 @@ body{
 }
 
 .next-btn:hover{
+
     transform:scale(1.03);
 }
 
@@ -1008,6 +1101,7 @@ body{
     display:flex;
 
     align-items:center;
+
     justify-content:center;
 
     font-size:23px;
@@ -1056,13 +1150,16 @@ body{
 
 
 /* =========================================================
-   RESPONSIVE
+   TABLET
 ========================================================= */
 
 @media(max-width:1100px){
 
     body{
+
         padding:15px;
+
+        align-items:flex-start;
     }
 
     .store{
@@ -1070,6 +1167,10 @@ body{
         grid-template-columns:1fr;
 
         width:95vw;
+
+        max-width:800px;
+
+        min-height:auto;
     }
 
     .hero{
@@ -1084,188 +1185,721 @@ body{
 }
 
 
+/* =========================================================
+   MOBILE RESPONSIVE
+========================================================= */
+
 @media(max-width:650px){
 
+    html,
     body{
-        padding:0;
+
+        width:100%;
+
+        max-width:100%;
+
+        overflow-x:hidden;
     }
+
+    body{
+
+        padding:0;
+
+        display:block;
+
+        background:#fff;
+    }
+
+
+    /* =====================================================
+       STORE
+    ===================================================== */
 
     .store{
 
-        width:100vw;
+        width:100%;
+
+        max-width:none;
+
+        min-height:100vh;
+
+        display:block;
 
         border-radius:0;
 
-        grid-template-columns:1fr;
+        overflow:hidden;
+
+        box-shadow:none;
     }
+
+
+    /* =====================================================
+       MOBILE HERO
+    ===================================================== */
 
     .hero{
 
-        min-height:680px;
+        position:relative;
+
+        width:100%;
+
+        height:720px;
+
+        min-height:720px;
+
+        overflow:hidden;
     }
 
+
+    /* =====================================================
+       MOBILE PUMA BRAND
+    ===================================================== */
+
     .brand-row{
-        left:25px;
+
+        position:absolute;
+
+        top:0;
+        left:0;
+
+        width:100%;
+
+        margin:0;
+
+        padding:
+            20px 20px 0;
+
+        display:flex;
+
+        align-items:flex-start;
+
         gap:14px;
-        margin-bottom:32px;
+
+        z-index:50;
     }
 
     .puma-logo{
-        font-size:20px;
+
+        font-size:22px;
+
+        line-height:1;
+
+        flex-shrink:0;
+    }
+
+    .puma-logo sup{
+
+        font-size:8px;
     }
 
     .brand-description{
-        font-size:12px;
-        max-width:120px;
+
+        display:block;
+
+        font-size:11px;
+
+        line-height:1.25;
+
+        max-width:125px;
+
+        padding-top:1px;
     }
+
+
+    /* =====================================================
+       MOBILE HERO CONTENT
+    ===================================================== */
 
     .hero-content{
 
+        position:absolute;
+
+        top:145px;
+
         left:25px;
 
-        top:120px;
+        width:
+            calc(100% - 50px);
 
-        width:210px;
+        z-index:25;
+    }
+
+    .collection{
+
+        font-size:15px;
+
+        letter-spacing:.7px;
+
+        margin-bottom:18px;
     }
 
     .hero-title{
 
-        font-size:65px;
+        font-size:60px;
+
+        line-height:.86;
 
         letter-spacing:-4px;
+
+        max-width:210px;
+
+        margin-bottom:25px;
     }
 
     .description{
 
+        width:190px;
+
         font-size:16px;
 
-        width:180px;
+        line-height:1.4;
+
+        margin:0;
+
+        position:relative;
+
+        z-index:40;
     }
+
+
+    /* =====================================================
+       MOBILE PRODUCT IMAGE
+    ===================================================== */
 
     .product-image-wrapper{
 
-        right:-90px;
+        position:absolute;
 
-        width:65%;
+        top:365px;
 
-        top:140px;
+        right:-5px;
+
+        width:48%;
+
+        height:300px;
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:center;
+
+        z-index:8;
+
+        pointer-events:none;
+    }
+
+    .product-image{
+
+        width:100%;
+
+        height:100%;
+
+        object-fit:contain;
+
+        object-position:center;
+
+        filter:
+            drop-shadow(
+                0 18px 16px
+                rgba(0,0,0,.20)
+            );
     }
 
 
-    /* boy image smaller on mobile */
+    /* =====================================================
+       MOBILE CHARACTER
+    ===================================================== */
 
     .boy-animation{
 
-        width:190px;
-        bottom:78px;
+        position:absolute;
+
+        width:105px;
+
+        max-width:105px;
+
+        height:auto;
+
+        max-height:250px;
+
+        left:5px;
+
+        bottom:88px;
+
+        object-fit:contain;
+
+        object-position:center bottom;
+
+        z-index:18;
+
+        pointer-events:none;
+
+        animation:
+            boyImageEntrance
+            10s
+            ease-in-out
+            infinite;
     }
 
 
+    @keyframes boyImageEntrance{
+
+        0%,6%{
+
+            left:-130px;
+
+            opacity:0;
+
+            transform:
+                translateY(10px)
+                scale(.96);
+        }
+
+        14%{
+
+            left:5px;
+
+            opacity:1;
+
+            transform:
+                translateY(0)
+                scale(1);
+        }
+
+        52%{
+
+            left:5px;
+
+            opacity:1;
+
+            transform:
+                translateY(-4px)
+                scale(1);
+        }
+
+        62%{
+
+            left:5px;
+
+            opacity:1;
+
+            transform:
+                translateY(0)
+                scale(1);
+        }
+
+        76%,100%{
+
+            left:-130px;
+
+            opacity:0;
+
+            transform:
+                translateY(10px)
+                scale(.96);
+        }
+    }
+
+
+    /* =====================================================
+       MOBILE CATEGORY BAR
+    ===================================================== */
+
     .categories{
 
-        left:15px;
-        right:15px;
+        position:absolute;
 
-        bottom:20px;
+        left:12px;
 
-        height:85px;
+        right:12px;
+
+        bottom:15px;
+
+        width:auto;
+
+        height:82px;
+
+        padding:6px;
+
+        border-radius:25px;
+
+        z-index:45;
+
+        grid-template-columns:
+            repeat(5,1fr);
     }
 
     .category{
 
         height:65px;
 
+        border-radius:20px;
+
+        gap:4px;
+
         font-size:10px;
+
+        white-space:nowrap;
     }
 
     .category-icon{
 
-        font-size:20px;
+        font-size:19px;
     }
+
+
+    /* =====================================================
+       MOBILE STORE PANEL
+    ===================================================== */
 
     .store-panel{
 
+        width:100%;
+
+        min-height:auto;
+
         padding:
-            35px 20px;
+            35px 20px 30px;
+
+        display:flex;
+    }
+
+    .store-heading{
+
+        padding-right:55px;
     }
 
     .store-heading h1{
 
         font-size:34px;
+
+        line-height:1.05;
+
+        letter-spacing:-1.5px;
     }
+
+    .store-heading p{
+
+        font-size:15px;
+
+        margin-top:10px;
+    }
+
+
+    /* =====================================================
+       MOBILE SHOPPING BAG
+    ===================================================== */
 
     .bag{
 
+        top:30px;
+
         right:20px;
+
+        width:50px;
+
+        height:50px;
+
+        border-radius:15px;
+
+        font-size:21px;
     }
+
+
+    /* =====================================================
+       HIDE TABLE HEADER
+    ===================================================== */
 
     .table-head{
 
         display:none;
     }
 
-    .product-row{
 
-        grid-template-columns:
-            1fr 45px 70px 45px;
+    /* =====================================================
+       MOBILE PRODUCTS
+    ===================================================== */
 
-        min-height:105px;
+    .products{
+
+        margin-top:25px;
+
+        width:100%;
     }
 
-    .thumb{
+    .product-row{
 
-        width:65px;
-        height:75px;
+        width:100%;
+
+        min-height:95px;
+
+        grid-template-columns:
+            minmax(0,1fr)
+            38px
+            65px
+            40px;
+
+        gap:5px;
+
+        padding:8px;
+
+        border-radius:17px;
     }
 
     .product-info{
 
-        gap:10px;
+        min-width:0;
+
+        gap:8px;
+    }
+
+    .thumb{
+
+        width:58px;
+
+        height:68px;
+
+        border-radius:13px;
+    }
+
+    .product-info > div:last-child{
+
+        min-width:0;
     }
 
     .product-name{
 
-        font-size:13px;
+        font-size:12px;
+
+        line-height:1.15;
     }
 
     .product-color{
 
-        font-size:11px;
+        font-size:10px;
+
+        margin-top:5px;
     }
 
     .size{
 
-        width:35px;
-        height:35px;
+        width:34px;
+
+        height:34px;
+
+        font-size:12px;
     }
 
     .price{
 
-        font-size:13px;
+        font-size:12px;
+
+        white-space:nowrap;
     }
 
     .add{
 
-        width:38px;
-        height:38px;
+        width:36px;
 
-        font-size:23px;
+        height:36px;
+
+        font-size:20px;
     }
+
+
+    /* =====================================================
+       MOBILE CONTROLS
+    ===================================================== */
 
     .controls{
 
-        padding-left:18px;
+        width:100%;
+
+        height:72px;
+
+        margin-top:25px;
+
+        padding:
+            7px 7px 7px 15px;
+
+        border-radius:36px;
+
+        gap:5px;
+    }
+
+    .counter{
+
+        font-size:13px;
+    }
+
+    .dots{
+
+        gap:5px;
+
+        margin-left:5px;
+
+        margin-right:auto;
+    }
+
+    .dot{
+
+        width:6px;
+
+        height:6px;
     }
 
     .next-btn{
 
-        min-width:155px;
+        min-width:135px;
 
-        font-size:12px;
+        height:56px;
+
+        padding:
+            0 6px 0 15px;
+
+        font-size:11px;
+
+        gap:5px;
+    }
+
+    .next-arrow{
+
+        width:42px;
+
+        height:42px;
+
+        font-size:19px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE - 390PX
+========================================================= */
+
+@media(max-width:390px){
+
+    .hero{
+
+        height:700px;
+
+        min-height:700px;
+    }
+
+    .brand-row{
+
+        padding-left:15px;
+
+        padding-right:15px;
+    }
+
+    .hero-content{
+
+        left:20px;
+
+        width:
+            calc(100% - 40px);
+
+        top:140px;
+    }
+
+    .hero-title{
+
+        font-size:55px;
+
+        max-width:190px;
+    }
+
+    .description{
+
+        width:170px;
+
+        font-size:15px;
+    }
+
+    .product-image-wrapper{
+
+        top:375px;
+
+        right:-5px;
+
+        width:47%;
+
+        height:285px;
+    }
+
+    .boy-animation{
+
+        width:95px;
+
+        max-width:95px;
+
+        bottom:88px;
+    }
+
+    .categories{
+
+        left:8px;
+
+        right:8px;
+
+        bottom:12px;
+    }
+
+    .category{
+
+        font-size:9px;
+    }
+
+    .category-icon{
+
+        font-size:17px;
+    }
+
+    .store-panel{
+
+        padding-left:15px;
+
+        padding-right:15px;
+    }
+
+    .product-row{
+
+        grid-template-columns:
+            minmax(0,1fr)
+            34px
+            60px
+            36px;
+    }
+
+    .thumb{
+
+        width:52px;
+
+        height:62px;
+    }
+
+    .product-name{
+
+        font-size:11px;
+    }
+
+    .price{
+
+        font-size:11px;
+    }
+
+    .next-btn{
+
+        min-width:120px;
+
+        font-size:10px;
     }
 }
 
 </style>
+
 </head>
 
 
@@ -1279,287 +1913,285 @@ body{
 <div class="store">
 
 
-<!-- =====================================================
-     LEFT HERO
-===================================================== -->
-
-<section class="hero" id="hero">
-
-
-    <!-- PUMA BRAND ROW -->
-
-    <div class="brand-row">
-        <div class="puma-logo">PUMA<sup>®</sup></div>
-
-        <div class="brand-description">
-            Setting standards,<br>
-            not following them.
-        </div>
-
-    </div>
-
-
-    <!-- FLOATING BLOBS -->
-
-    <div class="blob blob-one"></div>
-    <div class="blob blob-two"></div>
-    <div class="blob blob-three"></div>
-
-
     <!-- =================================================
-         BOY IMAGE ANIMATION
+         LEFT HERO
     ================================================== -->
 
-    <img
-        class="boy-animation"
-        src="images/character.png"
-        alt="PUMA Character"
+    <section
+        class="hero"
+        id="hero"
     >
 
 
-    <!-- =================================================
-         HERO CONTENT
-    ================================================== -->
+        <!-- PUMA BRAND -->
 
-    <div class="hero-content"
-         id="heroContent">
+        <div class="brand-row">
 
+            <div class="puma-logo">
+                PUMA<sup>®</sup>
+            </div>
 
-        <div class="collection">
-            WOMEN'S COLLECTION
+            <div class="brand-description">
+                Setting standards,<br>
+                not following them.
+            </div>
+
         </div>
 
 
-        <h2 class="hero-title"
-            id="heroTitle">
+        <!-- FLOATING BLOBS -->
 
-            Logo<br>
-            Tee
+        <div class="blob blob-one"></div>
 
-        </h2>
+        <div class="blob blob-two"></div>
 
-
-        <div class="title-line"></div>
+        <div class="blob blob-three"></div>
 
 
-        <p class="description"
-           id="heroDescription">
-
-            Classic PUMA style<br>
-            meets everyday<br>
-            comfort.
-
-        </p>
-
-
-
-    </div>
-
-
-    <!-- =================================================
-         PRODUCT IMAGE
-    ================================================== -->
-
-    <div class="product-image-wrapper">
+        <!-- CHARACTER -->
 
         <img
-            id="heroImage"
-            class="product-image"
-            src="images/pink-puma.png"
-            alt="PUMA T-Shirt"
+            class="boy-animation"
+            src="images/character.png"
+            alt="PUMA Character"
         >
 
-    </div>
+
+        <!-- HERO CONTENT -->
+
+        <div
+            class="hero-content"
+            id="heroContent"
+        >
+
+            <div class="collection">
+                WOMEN'S COLLECTION
+            </div>
+
+
+            <h2
+                class="hero-title"
+                id="heroTitle"
+            >
+                Logo<br>
+                Tee
+            </h2>
+
+
+            <p
+                class="description"
+                id="heroDescription"
+            >
+                Classic PUMA style<br>
+                meets everyday<br>
+                comfort.
+            </p>
+
+        </div>
+
+
+        <!-- PRODUCT IMAGE -->
+
+        <div class="product-image-wrapper">
+
+            <img
+                id="heroImage"
+                class="product-image"
+                src="images/pink-puma.png"
+                alt="PUMA T-Shirt"
+            >
+
+        </div>
+
+
+        <!-- CATEGORY BAR -->
+
+        <div class="categories">
+
+
+            <div class="category active">
+
+                <div class="category-icon">
+                    ♧
+                </div>
+
+                <span>
+                    T-Shirts
+                </span>
+
+            </div>
+
+
+            <div class="category">
+
+                <div class="category-icon">
+                    ♧
+                </div>
+
+                <span>
+                    Footwear
+                </span>
+
+            </div>
+
+
+            <div class="category">
+
+                <div class="category-icon">
+                    ♧
+                </div>
+
+                <span>
+                    Bags
+                </span>
+
+            </div>
+
+
+            <div class="category">
+
+                <div class="category-icon">
+                    ♧
+                </div>
+
+                <span>
+                    Accessories
+                </span>
+
+            </div>
+
+
+            <div class="category">
+
+                <div class="category-icon">
+                    ♡
+                </div>
+
+                <span>
+                    Favourites
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </section>
 
 
     <!-- =================================================
-         CATEGORY BAR
+         RIGHT STORE PANEL
     ================================================== -->
 
-    <div class="categories">
+    <section class="store-panel">
 
 
-        <div class="category active">
+        <!-- HEADER -->
 
-            <div class="category-icon">
-                ♧
-            </div>
+        <div class="store-heading">
 
-            <span>
-                T-Shirts
-            </span>
+            <h1>
+                My Apparel Store
+            </h1>
 
-        </div>
-
-
-        <div class="category">
-
-            <div class="category-icon">
-                ♧
-            </div>
-
-            <span>
-                Footwear
-            </span>
+            <p>
+                Premium PUMA T-Shirts
+            </p>
 
         </div>
 
 
-        <div class="category">
+        <!-- SHOPPING BAG -->
 
-            <div class="category-icon">
-                ♧
-            </div>
+        <div class="bag">
+            🛍️
+        </div>
+
+
+        <!-- TABLE HEAD -->
+
+        <div class="table-head">
 
             <span>
-                Bags
+                Product
             </span>
+
+            <span>
+                Size
+            </span>
+
+            <span>
+                Price
+            </span>
+
+            <span></span>
 
         </div>
 
 
-        <div class="category">
-
-            <div class="category-icon">
-                ♧
-            </div>
-
-            <span>
-                Accessories
-            </span>
-
-        </div>
-
-
-        <div class="category">
-
-            <div class="category-icon">
-                ♡
-            </div>
-
-            <span>
-                Favourites
-            </span>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     RIGHT STORE PANEL
-===================================================== -->
-
-<section class="store-panel">
-
-
-    <!-- HEADER -->
-
-    <div class="store-heading">
-
-        <h1>
-            My Apparel Store
-        </h1>
-
-        <p>
-            Premium PUMA T-Shirts
-        </p>
-
-    </div>
-
-
-    <!-- BAG -->
-
-    <div class="bag">
-        🛍️
-    </div>
-
-
-    <!-- TABLE HEAD -->
-
-    <div class="table-head">
-
-        <span>
-            Product
-        </span>
-
-        <span>
-            Size
-        </span>
-
-        <span>
-            Price
-        </span>
-
-        <span></span>
-
-    </div>
-
-
-    <!-- PRODUCT LIST -->
-
-    <div
-        class="products"
-        id="products">
-    </div>
-
-
-    <!-- CONTROLS -->
-
-    <div class="controls">
-
+        <!-- PRODUCTS -->
 
         <div
-            class="counter"
-            id="counter">
+            class="products"
+            id="products"
+        ></div>
 
-            01 / 04
+
+        <!-- CONTROLS -->
+
+        <div class="controls">
+
+
+            <div
+                class="counter"
+                id="counter"
+            >
+                01 / 04
+            </div>
+
+
+            <div
+                class="dots"
+                id="dots"
+            >
+
+                <span class="dot active"></span>
+
+                <span class="dot"></span>
+
+                <span class="dot"></span>
+
+                <span class="dot"></span>
+
+            </div>
+
+
+            <button
+                class="next-btn"
+                id="nextButton"
+            >
+
+                <span>
+                    Next Collection
+                </span>
+
+                <span class="next-arrow">
+                    →
+                </span>
+
+            </button>
+
 
         </div>
 
 
-        <div
-            class="dots"
-            id="dots">
+    </section>
 
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-
-        </div>
-
-
-        <button
-            class="next-btn"
-            id="nextButton">
-
-            <span>
-                Next Collection
-            </span>
-
-            <span class="next-arrow">
-                →
-            </span>
-
-        </button>
-
-
-    </div>
-
-
-</section>
 
 </div>
 
 
-
 <script>
-
 
 /* =========================================================
    COLLECTION DATA
@@ -1589,39 +2221,81 @@ const collections = [
         products:[
 
             {
-                image:"images/pink-puma.png",
-                name:"Essentials<br>Logo Tee",
-                color:"Magenta",
-                size:"S",
-                price:"₹1,299"
+
+                image:
+                    "images/pink-puma.png",
+
+                name:
+                    "Essentials<br>Logo Tee",
+
+                color:
+                    "Magenta",
+
+                size:
+                    "S",
+
+                price:
+                    "₹1,299"
             },
 
-            {
-                image:"images/purple-puma.png",
-                name:"Graphic<br>Tee",
-                color:"Deep Purple",
-                size:"M",
-                price:"₹1,499"
-            },
 
             {
-                image:"images/white-puma.png",
-                name:"Essential<br>Tee",
-                color:"White",
-                size:"L",
-                price:"₹1,199"
+
+                image:
+                    "images/purple-puma.png",
+
+                name:
+                    "Graphic<br>Tee",
+
+                color:
+                    "Deep Purple",
+
+                size:
+                    "M",
+
+                price:
+                    "₹1,499"
             },
 
+
             {
-                image:"images/black-puma.png",
-                name:"Essentials<br>Logo Tee",
-                color:"Black",
-                size:"M",
-                price:"₹1,299"
+
+                image:
+                    "images/white-puma.png",
+
+                name:
+                    "Essential<br>Tee",
+
+                color:
+                    "White",
+
+                size:
+                    "L",
+
+                price:
+                    "₹1,199"
+            },
+
+
+            {
+
+                image:
+                    "images/black-puma.png",
+
+                name:
+                    "Essentials<br>Logo Tee",
+
+                color:
+                    "Black",
+
+                size:
+                    "M",
+
+                price:
+                    "₹1,299"
             }
 
         ]
-
     },
 
 
@@ -1646,39 +2320,81 @@ const collections = [
         products:[
 
             {
-                image:"images/purple-puma.png",
-                name:"Graphic<br>Tee",
-                color:"Deep Purple",
-                size:"M",
-                price:"₹1,499"
+
+                image:
+                    "images/purple-puma.png",
+
+                name:
+                    "Graphic<br>Tee",
+
+                color:
+                    "Deep Purple",
+
+                size:
+                    "M",
+
+                price:
+                    "₹1,499"
             },
 
-            {
-                image:"images/pink-puma.png",
-                name:"Logo<br>Tee",
-                color:"Magenta",
-                size:"S",
-                price:"₹1,299"
-            },
 
             {
-                image:"images/black-puma.png",
-                name:"Essentials<br>Tee",
-                color:"Black",
-                size:"M",
-                price:"₹1,299"
+
+                image:
+                    "images/pink-puma.png",
+
+                name:
+                    "Logo<br>Tee",
+
+                color:
+                    "Magenta",
+
+                size:
+                    "S",
+
+                price:
+                    "₹1,299"
             },
 
+
             {
-                image:"images/white-puma.png",
-                name:"Essential<br>Tee",
-                color:"White",
-                size:"L",
-                price:"₹1,199"
+
+                image:
+                    "images/black-puma.png",
+
+                name:
+                    "Essentials<br>Tee",
+
+                color:
+                    "Black",
+
+                size:
+                    "M",
+
+                price:
+                    "₹1,299"
+            },
+
+
+            {
+
+                image:
+                    "images/white-puma.png",
+
+                name:
+                    "Essential<br>Tee",
+
+                color:
+                    "White",
+
+                size:
+                    "L",
+
+                price:
+                    "₹1,199"
             }
 
         ]
-
     },
 
 
@@ -1705,39 +2421,81 @@ const collections = [
         products:[
 
             {
-                image:"images/white-puma.png",
-                name:"Essential<br>Tee",
-                color:"White",
-                size:"L",
-                price:"₹1,199"
+
+                image:
+                    "images/white-puma.png",
+
+                name:
+                    "Essential<br>Tee",
+
+                color:
+                    "White",
+
+                size:
+                    "L",
+
+                price:
+                    "₹1,199"
             },
 
-            {
-                image:"images/black-puma.png",
-                name:"Essentials<br>Logo Tee",
-                color:"Black",
-                size:"M",
-                price:"₹1,299"
-            },
 
             {
-                image:"images/pink-puma.png",
-                name:"Logo<br>Tee",
-                color:"Magenta",
-                size:"S",
-                price:"₹1,299"
+
+                image:
+                    "images/black-puma.png",
+
+                name:
+                    "Essentials<br>Logo Tee",
+
+                color:
+                    "Black",
+
+                size:
+                    "M",
+
+                price:
+                    "₹1,299"
             },
 
+
             {
-                image:"images/purple-puma.png",
-                name:"Graphic<br>Tee",
-                color:"Deep Purple",
-                size:"M",
-                price:"₹1,499"
+
+                image:
+                    "images/pink-puma.png",
+
+                name:
+                    "Logo<br>Tee",
+
+                color:
+                    "Magenta",
+
+                size:
+                    "S",
+
+                price:
+                    "₹1,299"
+            },
+
+
+            {
+
+                image:
+                    "images/purple-puma.png",
+
+                name:
+                    "Graphic<br>Tee",
+
+                color:
+                    "Deep Purple",
+
+                size:
+                    "M",
+
+                price:
+                    "₹1,499"
             }
 
         ]
-
     },
 
 
@@ -1754,7 +2512,7 @@ const collections = [
             "Essentials<br>Logo Tee",
 
         description:
-            "Minimal UMA design<br>with everyday<br>comfort.",
+            "Minimal PUMA design<br>with everyday<br>comfort.",
 
         background:
             "radial-gradient(circle at 82% 8%, rgba(255,255,255,.2), transparent 22%), linear-gradient(135deg,#171923,#292b36 55%,#454754)",
@@ -1762,43 +2520,84 @@ const collections = [
         products:[
 
             {
-                image:"images/black-puma.png",
-                name:"Essentials<br>Logo Tee",
-                color:"Black",
-                size:"M",
-                price:"₹1,299"
+
+                image:
+                    "images/black-puma.png",
+
+                name:
+                    "Essentials<br>Logo Tee",
+
+                color:
+                    "Black",
+
+                size:
+                    "M",
+
+                price:
+                    "₹1,299"
             },
 
-            {
-                image:"images/white-puma.png",
-                name:"Essential<br>Tee",
-                color:"White",
-                size:"L",
-                price:"₹1,199"
-            },
 
             {
-                image:"images/purple-puma.png",
-                name:"Graphic<br>Tee",
-                color:"Deep Purple",
-                size:"M",
-                price:"₹1,499"
+
+                image:
+                    "images/white-puma.png",
+
+                name:
+                    "Essential<br>Tee",
+
+                color:
+                    "White",
+
+                size:
+                    "L",
+
+                price:
+                    "₹1,199"
             },
 
+
             {
-                image:"images/pink-puma.png",
-                name:"Logo<br>Tee",
-                color:"Magenta",
-                size:"S",
-                price:"₹1,299"
+
+                image:
+                    "images/purple-puma.png",
+
+                name:
+                    "Graphic<br>Tee",
+
+                color:
+                    "Deep Purple",
+
+                size:
+                    "M",
+
+                price:
+                    "₹1,499"
+            },
+
+
+            {
+
+                image:
+                    "images/pink-puma.png",
+
+                name:
+                    "Logo<br>Tee",
+
+                color:
+                    "Magenta",
+
+                size:
+                    "S",
+
+                price:
+                    "₹1,299"
             }
 
         ]
-
     }
 
 ];
-
 
 
 /* =========================================================
@@ -1807,38 +2606,39 @@ const collections = [
 
 let currentIndex = 0;
 
-
 const hero =
     document.getElementById("hero");
-
 
 const heroImage =
     document.getElementById("heroImage");
 
-
 const heroTitle =
     document.getElementById("heroTitle");
 
-
 const heroDescription =
-    document.getElementById("heroDescription");
-
+    document.getElementById(
+        "heroDescription"
+    );
 
 const products =
-    document.getElementById("products");
-
+    document.getElementById(
+        "products"
+    );
 
 const counter =
-    document.getElementById("counter");
-
+    document.getElementById(
+        "counter"
+    );
 
 const dots =
-    document.querySelectorAll(".dot");
-
+    document.querySelectorAll(
+        ".dot"
+    );
 
 const nextButton =
-    document.getElementById("nextButton");
-
+    document.getElementById(
+        "nextButton"
+    );
 
 
 /* =========================================================
@@ -1859,7 +2659,6 @@ function renderProducts(collection){
 
         collection.products.forEach(
             product => {
-
 
                 const row =
                     document.createElement(
@@ -1884,17 +2683,15 @@ function renderProducts(collection){
                         <div>
 
                             <div
-                                class="product-name">
-
+                                class="product-name"
+                            >
                                 ${product.name}
-
                             </div>
 
                             <div
-                                class="product-color">
-
+                                class="product-color"
+                            >
                                 ${product.color}
-
                             </div>
 
                         </div>
@@ -1903,24 +2700,20 @@ function renderProducts(collection){
 
 
                     <div class="size">
-
                         ${product.size}
-
                     </div>
 
 
                     <div class="price">
-
                         ${product.price}
-
                     </div>
 
 
                     <button
-                        class="add">
-
+                        class="add"
+                        type="button"
+                    >
                         +
-
                     </button>
 
                 `;
@@ -1941,13 +2734,11 @@ function renderProducts(collection){
 }
 
 
-
 /* =========================================================
    CHANGE COLLECTION
 ========================================================= */
 
 function changeCollection(){
-
 
     currentIndex++;
 
@@ -1966,12 +2757,10 @@ function changeCollection(){
         collections[currentIndex];
 
 
-
     /* HERO BACKGROUND */
 
     hero.style.background =
         collection.background;
-
 
 
     /* WHITE CLASS */
@@ -1992,8 +2781,7 @@ function changeCollection(){
     }
 
 
-
-    /* TEXT */
+    /* TEXT ANIMATION */
 
     heroTitle.classList.add(
         "change-out"
@@ -2006,10 +2794,8 @@ function changeCollection(){
 
     setTimeout(() => {
 
-
         heroTitle.innerHTML =
             collection.title;
-
 
         heroDescription.innerHTML =
             collection.description;
@@ -2045,9 +2831,7 @@ function changeCollection(){
 
         },600);
 
-
     },250);
-
 
 
     /* PRODUCT IMAGE */
@@ -2055,28 +2839,22 @@ function changeCollection(){
     heroImage.style.opacity =
         "0";
 
-
     heroImage.style.transform =
         "translateY(20px) scale(.96)";
 
 
     setTimeout(() => {
 
-
         heroImage.src =
             collection.image;
-
 
         heroImage.style.opacity =
             "1";
 
-
         heroImage.style.transform =
             "translateY(0) scale(1)";
 
-
     },300);
-
 
 
     /* PRODUCTS */
@@ -2086,12 +2864,10 @@ function changeCollection(){
     );
 
 
-
     /* COUNTER */
 
     counter.textContent =
         `0${currentIndex + 1} / 04`;
-
 
 
     /* DOTS */
@@ -2110,7 +2886,6 @@ function changeCollection(){
 }
 
 
-
 /* =========================================================
    NEXT BUTTON
 ========================================================= */
@@ -2121,7 +2896,6 @@ nextButton.addEventListener(
 );
 
 
-
 /* =========================================================
    INITIAL PRODUCTS
 ========================================================= */
@@ -2129,7 +2903,6 @@ nextButton.addEventListener(
 renderProducts(
     collections[0]
 );
-
 
 
 /* =========================================================
@@ -2153,7 +2926,6 @@ document.addEventListener(
 );
 
 
-
 /* =========================================================
    CATEGORY CLICK
 ========================================================= */
@@ -2162,11 +2934,9 @@ document
 .querySelectorAll(".category")
 .forEach(category => {
 
-
     category.addEventListener(
         "click",
         () => {
-
 
             document
             .querySelectorAll(
@@ -2191,7 +2961,6 @@ document
 });
 
 
-
 /* =========================================================
    ADD TO CART
 ========================================================= */
@@ -2199,7 +2968,6 @@ document
 document.addEventListener(
     "click",
     event => {
-
 
         if(
             event.target.classList
@@ -2209,7 +2977,6 @@ document.addEventListener(
             event.target.textContent =
                 "✓";
 
-
             event.target.style
                 .background =
                 "#222";
@@ -2217,15 +2984,12 @@ document.addEventListener(
 
             setTimeout(() => {
 
-
                 event.target.textContent =
                     "+";
-
 
                 event.target.style
                     .background =
                     "#f52e8b";
-
 
             },1000);
 
@@ -2237,7 +3001,5 @@ document.addEventListener(
 </script>
 
 </body>
+
 </html>
-<style>
-.brand-description, .hero-pill { display:none !important; }
-</style>
